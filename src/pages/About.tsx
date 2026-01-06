@@ -62,7 +62,7 @@ const About = () => {
                 <div className="flex-1">
                   <h3 className="text-secondary font-bold mb-2">Master of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
-                  <p className="text-text-light mb-2">Department="Anthropology</p>
+                  <p className="text-text-light mb-2">Department of Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.10 out of 4.0</p>
                 </div>
                 <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
@@ -77,7 +77,7 @@ const About = () => {
                 <div className="flex-1">
                   <h3 className="text-secondary font-bold mb-2">Bachelor of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
-                  <p className="text-text-light mb-2">Department="Anthropology</p>
+                  <p className="text-text-light mb-2">Department of Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.36 out of 4.0</p>
                 </div>
                 <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
