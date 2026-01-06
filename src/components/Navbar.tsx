@@ -22,7 +22,7 @@ const Navbar = () => {
     }`}>
       <div className="max-w-[1200px] mx-auto px-5 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-primary hover:text-secondary transition-colors">
-          Shewly Akter
+          <img src="/shewly_logo.png" className='w-[50px] ' alt="" />
         </Link>
 
         <ul className={`${
