@@ -159,27 +159,29 @@ const Experience = () => {
               <div className="absolute left-0 md:left-3 top-0 w-4 h-4 md:w-5 md:h-5 bg-accent border-2 md:border-4 border-white rounded-full shadow-md z-10"></div>
 
               {/* Content card */}
-              <div className="bg-white p-4 md:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1">
-                <div className="inline-block bg-primary text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm mb-4">
+              <div className="bg-white p-4 md:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1 text-center md:text-left">
+                <div className="inline-block bg-primary text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm mb-4 mx-auto md:mx-0">
                   {exp.date}
                 </div>
 
-                <div className="flex flex-col-reverse md:flex-row justify-between items-start mb-4 gap-4">
+                <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start mb-4 gap-4">
                   <div className="flex-1">
                     <h3 className="text-secondary font-bold mb-2 text-lg md:text-xl lg:text-2xl">{exp.title}</h3>
                     <p className="text-text-dark font-semibold mb-1 text-sm md:text-base">{exp.company}</p>
                     <p className="text-text-light italic mb-4 text-sm md:text-base">{exp.project}</p>
                   </div>
-                  <img
-                    src={exp.logo}
-                    alt={exp.company}
-                    className="w-full max-w-[100px] md:max-w-[150px] lg:max-w-[200px] object-contain ml-0 md:ml-4"
-                  />
+                  <div className="w-full flex justify-center md:justify-end md:w-auto">
+                    <img
+                      src={exp.logo}
+                      alt={exp.company}
+                      className="w-full max-w-[180px] md:max-w-[150px] lg:max-w-[200px] object-contain md:ml-4"
+                    />
+                  </div>
                 </div>
 
                 <button
                   onClick={() => toggleExpand(index)}
-                  className="bg-primary text-white border-none px-4 md:px-5 py-2 text-sm md:text-base rounded cursor-pointer font-semibold transition-all duration-300 mt-4 hover:bg-secondary"
+                  className="bg-primary text-white border-none px-4 md:px-5 py-2 text-sm md:text-base rounded cursor-pointer font-semibold transition-all duration-300 mt-4 hover:bg-secondary mx-auto md:mx-0 block md:inline-block"
                 >
                   {expandedItems.includes(index) ? 'Read Less' : 'Read More'}
                 </button>
