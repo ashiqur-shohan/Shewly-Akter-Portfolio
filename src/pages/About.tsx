@@ -54,33 +54,33 @@ const About = () => {
             Education
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-primary hover:-translate-y-1 hover:shadow-xl">
+            <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-primary hover:-translate-y-1 hover:shadow-xl text-center md:text-left">
               <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm mb-4">
                 2010 - 2011
               </div>
-              <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+              <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="text-secondary mb-2">Master of Social Science</h3>
+                  <h3 className="text-secondary font-bold mb-2">Master of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
                   <p className="text-text-light mb-2">Department="Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.10 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain ml-0 md:ml-3" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-primary hover:-translate-y-1 hover:shadow-xl">
+            <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 border-l-4 border-primary hover:-translate-y-1 hover:shadow-xl text-center md:text-left">
               <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm mb-4">
                 2006 - 2010
               </div>
-              <div className="flex flex-col md:flex-row justify-between items-start gap-4">
+              <div className="flex flex-col-reverse md:flex-row justify-between items-center md:items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="text-secondary mb-2">Bachelor of Social Science</h3>
+                  <h3 className="text-secondary font-bold mb-2">Bachelor of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
                   <p className="text-text-light mb-2">Department="Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.36 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain ml-0 md:ml-3" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[100px] md:max-w-[200px] lg:max-w-[250px]" />
+                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[200px] md:max-w-[200px] lg:max-w-[250px]" />
               </div>
               <h3 className="text-primary font-bold mb-4">Gender, Empowerment of Women and Development</h3>
               <p className="text-text-dark font-semibold mb-2">Bangladesh Mahila Parishad</p>
@@ -133,7 +133,7 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/cii.png" alt="CII" className="inline-block max-w-[100px] md:max-w-[200px] lg:max-w-[250px]" />
+                <img src="/cii.png" alt="CII" className="inline-block max-w-[200px] md:max-w-[200px] lg:max-w-[250px]" />
               </div>
               <h3 className="text-primary font-bold mb-4">Professional Graphic Design</h3>
               <p className="text-text-dark font-semibold mb-2">Creative IT Institute</p>

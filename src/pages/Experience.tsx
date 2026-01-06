@@ -148,7 +148,7 @@ const Experience = () => {
         subtitle="A journey through impactful international development projects"
       />
 
-      <section className="py-20 px-5 bg-bg-light">
+      <section className=" md:py-16 px-5 bg-bg-light">
         <div className="max-w-[900px] mx-auto relative mt-12">
           {/* Timeline line */}
           <div className="absolute left-2 md:left-5 top-0 bottom-0 w-[2px] md:w-[3px] bg-primary"></div>
@@ -164,7 +164,7 @@ const Experience = () => {
                   {exp.date}
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between items-start mb-4 gap-4">
+                <div className="flex flex-col-reverse md:flex-row justify-between items-start mb-4 gap-4">
                   <div className="flex-1">
                     <h3 className="text-secondary font-bold mb-2 text-lg md:text-xl lg:text-2xl">{exp.title}</h3>
                     <p className="text-text-dark font-semibold mb-1 text-sm md:text-base">{exp.company}</p>
