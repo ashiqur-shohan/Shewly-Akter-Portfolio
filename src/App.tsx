@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -15,13 +16,11 @@ function App() {
       document.body.style.transition = 'opacity 0.5s ease-in';
       document.body.style.opacity = '1';
     }, 100);
-
-    // Scroll to top on route change
-    window.scrollTo(0, 0);
   }, []);
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

@@ -31,7 +31,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/" 
-              className={`nav-link relative inline-block py-2 font-medium transition-colors ${
+              className={`nav-link relative inline-block py-1 font-medium transition-colors ${
                 isActive('/') ? 'text-primary after:w-full' : 'text-text-dark'
               } hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${
                 !isActive('/') ? 'after:w-0' : ''
@@ -44,7 +44,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/about" 
-              className={`nav-link relative inline-block py-2 font-medium transition-colors ${
+              className={`nav-link relative inline-block py-1 font-medium transition-colors ${
                 isActive('/about') ? 'text-primary after:w-full' : 'text-text-dark'
               } hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${
                 !isActive('/about') ? 'after:w-0' : ''
@@ -57,7 +57,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/experience" 
-              className={`nav-link relative inline-block py-2 font-medium transition-colors ${
+              className={`nav-link relative inline-block py-1 font-medium transition-colors ${
                 isActive('/experience') ? 'text-primary after:w-full' : 'text-text-dark'
               } hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${
                 !isActive('/experience') ? 'after:w-0' : ''
@@ -70,7 +70,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/contact" 
-              className={`nav-link relative inline-block py-2 font-medium transition-colors ${
+              className={`nav-link relative inline-block py-1 font-medium transition-colors ${
                 isActive('/contact') ? 'text-primary after:w-full' : 'text-text-dark'
               } hover:text-primary after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${
                 !isActive('/contact') ? 'after:w-0' : ''

@@ -166,7 +166,7 @@ const Experience = () => {
                 
                 <div className="flex justify-between items-start mb-4">
                   <div className="flex-1">
-                    <h3 className="text-secondary mb-2 text-2xl">{exp.title}</h3>
+                    <h3 className="text-secondary font-bold mb-2 text-2xl">{exp.title}</h3>
                     <p className="text-text-dark font-semibold mb-1">{exp.company}</p>
                     <p className="text-text-light italic mb-4">{exp.project}</p>
                   </div>

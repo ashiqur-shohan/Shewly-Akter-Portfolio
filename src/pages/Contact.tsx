@@ -12,7 +12,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate form submission
     setTimeout(() => {
       setFormMessage({
@@ -37,9 +37,9 @@ const Contact = () => {
 
   return (
     <>
-      <PageHeader 
-        title="Get in Touch" 
-        subtitle="Let's collaborate on creating meaningful social impact" 
+      <PageHeader
+        title="Get in Touch"
+        subtitle="Let's collaborate on creating meaningful social impact"
       />
 
       <section className="px-5 pb-20">
@@ -47,12 +47,12 @@ const Contact = () => {
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 mt-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-primary mb-8">Contact Information</h2>
-              
+              <h2 className="text-primary font-bold text-2xl mb-8">Contact Information</h2>
+
               <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-3xl min-w-[50px]">📧</div>
                 <div>
-                  <h3 className="text-secondary mb-2">Email</h3>
+                  <h3 className="text-secondary font-bold mb-2">Email</h3>
                   <a href="mailto:shewlyakter@gmail.com" className="text-primary hover:text-secondary transition-colors">
                     shewlyakter@gmail.com
                   </a>
@@ -62,7 +62,7 @@ const Contact = () => {
               <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-3xl min-w-[50px]">📱</div>
                 <div>
-                  <h3 className="text-secondary mb-2">Phone</h3>
+                  <h3 className="text-secondary font-bold mb-2">Phone</h3>
                   <a href="tel:+880-16-16750597" className="text-primary hover:text-secondary transition-colors">
                     +880-16-16750597
                   </a>
@@ -72,10 +72,10 @@ const Contact = () => {
               <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-3xl min-w-[50px]">📍</div>
                 <div>
-                  <h3 className="text-secondary mb-2">Location</h3>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=House+13%2F13%2C+Road+2%2C+Shyamoli%2C+Dhaka-1207%2C+Bangladesh" 
-                    target="_blank" 
+                  <h3 className="text-secondary font-bold mb-2">Location</h3>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=House+13%2F13%2C+Road+2%2C+Shyamoli%2C+Dhaka-1207%2C+Bangladesh"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-secondary transition-colors cursor-pointer inline-block"
                   >
@@ -90,10 +90,10 @@ const Contact = () => {
 
               {/* References */}
               <div className="mt-8 p-8 bg-bg-light rounded-lg">
-                <h3 className="text-primary mb-6">Professional References</h3>
-                
+                <h3 className="text-primary font-bold mb-6">Professional References</h3>
+
                 <div className="mb-6 pb-6 border-b border-gray-300">
-                  <h4 className="text-secondary mb-1">Madhab Chandra Das</h4>
+                  <h4 className="text-secondary font-bold mb-1">Madhab Chandra Das</h4>
                   <p className="text-text-light text-sm mb-1">Virginia Tech / Country Program Manager</p>
                   <a href="mailto:madhabcd@vt.edu" className="text-primary text-sm hover:underline">
                     madhabcd@vt.edu
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-6 pb-6 border-b border-gray-300">
-                  <h4 className="text-secondary mb-1">Saqif Nayeem Khan</h4>
+                  <h4 className="text-secondary font-bold mb-1">Saqif Nayeem Khan</h4>
                   <p className="text-text-light text-sm mb-1">MarketShare Associates / Advisor, Inclusive Markets</p>
                   <a href="mailto:skhan@marketshareassociates.com" className="text-primary text-sm hover:underline">
                     skhan@marketshareassociates.com
@@ -109,7 +109,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-secondary mb-1">M Murshed Haider</h4>
+                  <h4 className="text-secondary font-bold mb-1">M Murshed Haider</h4>
                   <p className="text-text-light text-sm mb-1">World Bank / Infrastructure Finance and PPP Consultant</p>
                   <a href="mailto:mhaider6@worldbank.org" className="text-primary text-sm hover:underline">
                     mhaider6@worldbank.org
@@ -120,7 +120,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-primary mb-8">Send a Message</h2>
+              <h2 className="text-primary font-bold text-2xl mb-8">Send a Message</h2>
               <form onSubmit={handleSubmit} className="bg-bg-light p-8 rounded-lg">
                 <div className="mb-6">
                   <label htmlFor="name" className="block text-text-dark font-semibold mb-2">
@@ -182,7 +182,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button 
+                <button
                   type="submit"
                   className="px-8 py-3 rounded bg-primary text-white font-semibold hover:bg-secondary hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300"
                 >
@@ -191,11 +191,10 @@ const Contact = () => {
               </form>
 
               {formMessage.text && (
-                <div className={`mt-4 p-4 rounded ${
-                  formMessage.type === 'success' 
-                    ? 'bg-green-100 text-green-800 border border-green-200' 
+                <div className={`mt-4 p-4 rounded ${formMessage.type === 'success'
+                    ? 'bg-green-100 text-green-800 border border-green-200'
                     : 'bg-red-100 text-red-800 border border-red-200'
-                }`}>
+                  }`}>
                   {formMessage.text}
                 </div>
               )}

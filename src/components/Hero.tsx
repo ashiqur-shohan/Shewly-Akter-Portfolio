@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-[1200px] grid md:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
         <div className="hero-text">
-          <h1 className="text-[3.5rem] text-primary mb-4 leading-tight animate-fade-in">
+          <h1 className="text-6xl font-bold text-primary mb-4 leading-tight animate-fade-in">
             Shewly Akter
           </h1>
           <h2 className="text-2xl text-secondary mb-6 font-medium animate-fade-in-delay">

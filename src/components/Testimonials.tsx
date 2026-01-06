@@ -25,7 +25,7 @@ const Testimonials = () => {
   return (
     <section className="px-5 pb-20 bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-center text-[2.5rem] text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+        <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
           What Colleagues Say
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
@@ -45,7 +45,7 @@ const Testimonials = () => {
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <h4 className="text-text-dark mb-1 text-lg">{testimonial.author}</h4>
+                  <h4 className="text-text-dark font-bold mb-1 text-lg">{testimonial.author}</h4>
                   <p className="text-text-light text-sm leading-snug">{testimonial.position}</p>
                 </div>
               </div>

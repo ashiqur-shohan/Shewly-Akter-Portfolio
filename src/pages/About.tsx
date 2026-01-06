@@ -13,9 +13,9 @@ const About = () => {
 
   return (
     <>
-      <PageHeader 
-        title="About Me" 
-        subtitle="Dedicated to advancing gender equality and social development" 
+      <PageHeader
+        title="About Me"
+        subtitle="Dedicated to advancing gender equality and social development"
       />
 
       {/* About Content */}
@@ -23,7 +23,7 @@ const About = () => {
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="grid md:grid-cols-[1.5fr_1fr] gap-16 items-center">
             <div>
-              <h2 className="text-primary text-3xl mb-6">Professional Background</h2>
+              <h2 className="text-primary font-bold text-3xl mb-6">Professional Background</h2>
               <p className="text-text-light mb-6 leading-relaxed text-lg">
                 I am a dedicated Gender Equality & Social Inclusion Specialist with over 13 years of experience
                 in international development, research, and knowledge management. My work focuses on integrating
@@ -37,9 +37,9 @@ const About = () => {
               </p>
             </div>
             <div className="flex justify-center items-center">
-              <img 
-                src="/about_profile.jpg" 
-                alt="Profile Picture" 
+              <img
+                src="/about_profile.jpg"
+                alt="Profile Picture"
                 className="w-[350px] h-[450px] rounded-lg shadow-xl object-cover"
               />
             </div>
@@ -50,7 +50,7 @@ const About = () => {
       {/* Education */}
       <section className="py-20 px-5 bg-bg-light">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Education
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
@@ -90,12 +90,12 @@ const About = () => {
       {/* Skills */}
       <section className="py-20 px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Core Competencies
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             {skills.map((skill, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-bg-light p-6 rounded-lg transition-all duration-300 hover:translate-x-2.5 hover:shadow-md"
               >
@@ -104,7 +104,7 @@ const About = () => {
                   <span className="text-primary">{skill.percentage}%</span>
                 </div>
                 <div className="w-full h-2.5 bg-gray-300 rounded overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-gradient-to-r from-primary to-secondary rounded animate-fillBar"
                     style={{ width: `${skill.percentage}%` }}
                   ></div>
@@ -118,24 +118,24 @@ const About = () => {
       {/* Training */}
       <section className="py-20 px-5 bg-bg-light">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Professional Training
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[80px]" />
+                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[250px]" />
               </div>
-              <h3 className="text-primary mb-4">Gender, Empowerment of Women and Development</h3>
+              <h3 className="text-primary font-bold mb-4">Gender, Empowerment of Women and Development</h3>
               <p className="text-text-dark font-semibold mb-2">Bangladesh Mahila Parishad</p>
               <p className="text-text-light text-sm">Duration: 3 months | Year: 2022</p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/cii.png" alt="CII" className="inline-block max-w-[80px]" />
+                <img src="/cii.png" alt="CII" className="inline-block max-w-[250px]" />
               </div>
-              <h3 className="text-primary mb-4">Professional Graphic Design</h3>
+              <h3 className="text-primary font-bold mb-4">Professional Graphic Design</h3>
               <p className="text-text-dark font-semibold mb-2">Creative IT Institute</p>
               <p className="text-text-light text-sm">Duration: 6 months | Year: 2021</p>
             </div>
