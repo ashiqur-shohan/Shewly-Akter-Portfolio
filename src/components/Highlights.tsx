@@ -37,7 +37,7 @@ const Highlights = () => {
               className="p-8 bg-bg-light rounded-lg text-center transition-all duration-300 cursor-pointer hover:-translate-y-2.5 hover:shadow-xl hover:bg-white"
             >
               <div className="text-5xl mb-4">{highlight.icon}</div>
-              <h3 className="text-primary mb-4 text-xl">{highlight.title}</h3>
+              <h3 className="text-primary font-bold mb-4 text-xl">{highlight.title}</h3>
               <p className="text-text-light leading-relaxed">{highlight.description}</p>
             </div>
           ))}

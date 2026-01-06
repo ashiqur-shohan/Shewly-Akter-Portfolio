@@ -23,6 +23,7 @@ export default {
         'scroll': 'scroll 2s infinite',
         'scroll-auto': 'scroll-auto 30s linear infinite',
         'fillBar': 'fillBar 1.5s ease-in-out',
+        'gradient-slow': 'gradient 15s ease infinite',
       },
       keyframes: {
         fadeIn: {
@@ -43,6 +44,10 @@ export default {
         },
         fillBar: {
           '0%': { width: '0%' },
+        },
+        gradient: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
         },
       },
     },
