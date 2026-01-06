@@ -39,7 +39,7 @@ const Stats = () => {
     const interval = setInterval(() => {
       currentStep++;
       const progress = currentStep / steps;
-      
+
       setCounts({
         years: Math.ceil(targets.years * progress),
         projects: Math.ceil(targets.projects * progress),
@@ -54,26 +54,26 @@ const Stats = () => {
   };
 
   return (
-    <section ref={statsRef} className="py-16 px-5 bg-gradient-to-r from-primary to-secondary">
+    <section ref={statsRef} className="py-12 md:py-16 px-5 bg-gradient-to-r from-primary to-secondary">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid md:grid-cols-3 gap-12 text-center text-white">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 text-center text-white">
           <div>
-            <div className="text-[3.5rem] font-bold mb-2">
+            <div className="text-5xl md:text-[3.5rem] font-bold mb-2">
               {counts.years}+
             </div>
-            <div className="text-lg opacity-90">Years of Experience</div>
+            <div className="text-base md:text-lg opacity-90">Years of Experience</div>
           </div>
           <div>
-            <div className="text-[3.5rem] font-bold mb-2">
+            <div className="text-5xl md:text-[3.5rem] font-bold mb-2">
               {counts.projects}+
             </div>
-            <div className="text-lg opacity-90">Major Projects</div>
+            <div className="text-base md:text-lg opacity-90">Major Projects</div>
           </div>
           <div>
-            <div className="text-[3.5rem] font-bold mb-2">
+            <div className="text-5xl md:text-[3.5rem] font-bold mb-2">
               {counts.orgs}+
             </div>
-            <div className="text-lg opacity-90">International Organizations</div>
+            <div className="text-base md:text-lg opacity-90">International Organizations</div>
           </div>
         </div>
       </div>

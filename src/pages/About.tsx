@@ -23,7 +23,7 @@ const About = () => {
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="grid md:grid-cols-[1.5fr_1fr] gap-16 items-center">
             <div>
-              <h2 className="text-primary font-bold text-3xl mb-6">Professional Background</h2>
+              <h2 className="text-primary font-bold text-2xl md:text-3xl mb-6">Professional Background</h2>
               <p className="text-text-light mb-6 leading-relaxed text-lg">
                 I am a dedicated Gender Equality & Social Inclusion Specialist with over 13 years of experience
                 in international development, research, and knowledge management. My work focuses on integrating
@@ -40,7 +40,7 @@ const About = () => {
               <img
                 src="/about_profile.jpg"
                 alt="Profile Picture"
-                className="w-[350px] h-[450px] rounded-lg shadow-xl object-cover"
+                className="w-full max-w-[300px] md:max-w-[350px] h-auto rounded-lg shadow-xl object-cover mx-auto"
               />
             </div>
           </div>
@@ -50,7 +50,7 @@ const About = () => {
       {/* Education */}
       <section className="py-20 px-5 bg-bg-light">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-2xl md:text-[2.5rem] font-bold text-primary mb-8 md:mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Education
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
@@ -58,14 +58,14 @@ const About = () => {
               <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm mb-4">
                 2010 - 2011
               </div>
-              <div className="flex justify-between items-start">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                 <div className="flex-1">
                   <h3 className="text-secondary mb-2">Master of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
-                  <p className="text-text-light mb-2">Department of Anthropology</p>
+                  <p className="text-text-light mb-2">Department="Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.10 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[200px] object-cover ml-3" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain ml-0 md:ml-3" />
               </div>
             </div>
 
@@ -73,14 +73,14 @@ const About = () => {
               <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm mb-4">
                 2006 - 2010
               </div>
-              <div className="flex justify-between items-start">
+              <div className="flex flex-col md:flex-row justify-between items-start gap-4">
                 <div className="flex-1">
                   <h3 className="text-secondary mb-2">Bachelor of Social Science</h3>
                   <p className="text-text-dark font-semibold mb-1">Jahangirnagar University</p>
-                  <p className="text-text-light mb-2">Department of Anthropology</p>
+                  <p className="text-text-light mb-2">Department="Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.36 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[200px] object-cover ml-3" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain ml-0 md:ml-3" />
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ const About = () => {
       {/* Skills */}
       <section className="py-20 px-5">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-2xl md:text-[2.5rem] font-bold text-primary mb-8 md:mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Core Competencies
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
@@ -118,13 +118,13 @@ const About = () => {
       {/* Training */}
       <section className="py-20 px-5 bg-bg-light">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+          <h2 className="text-center text-2xl md:text-[2.5rem] font-bold text-primary mb-8 md:mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
             Professional Training
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[250px]" />
+                <img src="/bmp.png" alt="BMP" className="inline-block max-w-[100px] md:max-w-[200px] lg:max-w-[250px]" />
               </div>
               <h3 className="text-primary font-bold mb-4">Gender, Empowerment of Women and Development</h3>
               <p className="text-text-dark font-semibold mb-2">Bangladesh Mahila Parishad</p>
@@ -133,7 +133,7 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-lg shadow-md text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div className="text-5xl mb-4">
-                <img src="/cii.png" alt="CII" className="inline-block max-w-[250px]" />
+                <img src="/cii.png" alt="CII" className="inline-block max-w-[100px] md:max-w-[200px] lg:max-w-[250px]" />
               </div>
               <h3 className="text-primary font-bold mb-4">Professional Graphic Design</h3>
               <p className="text-text-dark font-semibold mb-2">Creative IT Institute</p>

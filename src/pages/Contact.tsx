@@ -44,35 +44,35 @@ const Contact = () => {
 
       <section className="px-5 pb-20">
         <div className="max-w-[1200px] mx-auto">
-          <div className="grid md:grid-cols-[1fr_1.5fr] gap-16 mt-12">
+          <div className="grid md:grid-cols-[1fr_1.5fr] gap-8 md:gap-16 mt-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-primary font-bold text-2xl mb-8">Contact Information</h2>
+              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">Contact Information</h2>
 
-              <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-3xl min-w-[50px]">📧</div>
+              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📧</div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2">Email</h3>
+                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Email</h3>
                   <a href="mailto:shewlyakter@gmail.com" className="text-primary hover:text-secondary transition-colors">
                     shewlyakter@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-3xl min-w-[50px]">📱</div>
+              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📱</div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2">Phone</h3>
+                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Phone</h3>
                   <a href="tel:+880-16-16750597" className="text-primary hover:text-secondary transition-colors">
                     +880-16-16750597
                   </a>
                 </div>
               </div>
 
-              <div className="flex gap-6 mb-4 p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-3xl min-w-[50px]">📍</div>
+              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📍</div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2">Location</h3>
+                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Location</h3>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=House+13%2F13%2C+Road+2%2C+Shyamoli%2C+Dhaka-1207%2C+Bangladesh"
                     target="_blank"
@@ -89,8 +89,8 @@ const Contact = () => {
               </div>
 
               {/* References */}
-              <div className="mt-8 p-8 bg-bg-light rounded-lg">
-                <h3 className="text-primary font-bold mb-6">Professional References</h3>
+              <div className="mt-6 md:mt-8 p-6 md:p-8 bg-bg-light rounded-lg">
+                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base md:text-lg">Professional References</h3>
 
                 <div className="mb-6 pb-6 border-b border-gray-300">
                   <h4 className="text-secondary font-bold mb-1">Madhab Chandra Das</h4>
@@ -120,8 +120,8 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-primary font-bold text-2xl mb-8">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="bg-bg-light p-8 rounded-lg">
+              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">Send a Message</h2>
+              <form onSubmit={handleSubmit} className="bg-bg-light p-6 md:p-8 rounded-lg">
                 <div className="mb-6">
                   <label htmlFor="name" className="block text-text-dark font-semibold mb-2">
                     Your Name
@@ -192,8 +192,8 @@ const Contact = () => {
 
               {formMessage.text && (
                 <div className={`mt-4 p-4 rounded ${formMessage.type === 'success'
-                    ? 'bg-green-100 text-green-800 border border-green-200'
-                    : 'bg-red-100 text-red-800 border border-red-200'
+                  ? 'bg-green-100 text-green-800 border border-green-200'
+                  : 'bg-red-100 text-red-800 border border-red-200'
                   }`}>
                   {formMessage.text}
                 </div>

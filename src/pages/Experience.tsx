@@ -143,56 +143,55 @@ const Experience = () => {
 
   return (
     <>
-      <PageHeader 
-        title="Professional Experience" 
-        subtitle="A journey through impactful international development projects" 
+      <PageHeader
+        title="Professional Experience"
+        subtitle="A journey through impactful international development projects"
       />
 
       <section className="py-20 px-5 bg-bg-light">
         <div className="max-w-[900px] mx-auto relative mt-12">
           {/* Timeline line */}
-          <div className="absolute left-5 top-0 bottom-0 w-[3px] bg-primary"></div>
+          <div className="absolute left-2 md:left-5 top-0 bottom-0 w-[2px] md:w-[3px] bg-primary"></div>
 
           {experiences.map((exp, index) => (
-            <div key={index} className="relative pl-16 mb-12">
+            <div key={index} className="relative pl-8 md:pl-16 mb-12">
               {/* Timeline dot */}
-              <div className="absolute left-3 top-0 w-5 h-5 bg-accent border-4 border-white rounded-full shadow-md z-10"></div>
+              <div className="absolute left-0 md:left-3 top-0 w-4 h-4 md:w-5 md:h-5 bg-accent border-2 md:border-4 border-white rounded-full shadow-md z-10"></div>
 
               {/* Content card */}
-              <div className="bg-white p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1">
-                <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm mb-4">
+              <div className="bg-white p-4 md:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1">
+                <div className="inline-block bg-primary text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm mb-4">
                   {exp.date}
                 </div>
-                
-                <div className="flex justify-between items-start mb-4">
+
+                <div className="flex flex-col md:flex-row justify-between items-start mb-4 gap-4">
                   <div className="flex-1">
-                    <h3 className="text-secondary font-bold mb-2 text-2xl">{exp.title}</h3>
-                    <p className="text-text-dark font-semibold mb-1">{exp.company}</p>
-                    <p className="text-text-light italic mb-4">{exp.project}</p>
+                    <h3 className="text-secondary font-bold mb-2 text-lg md:text-xl lg:text-2xl">{exp.title}</h3>
+                    <p className="text-text-dark font-semibold mb-1 text-sm md:text-base">{exp.company}</p>
+                    <p className="text-text-light italic mb-4 text-sm md:text-base">{exp.project}</p>
                   </div>
-                  <img 
-                    src={exp.logo} 
+                  <img
+                    src={exp.logo}
                     alt={exp.company}
-                    className="w-full max-w-[200px] object-contain ml-4"
+                    className="w-full max-w-[100px] md:max-w-[150px] lg:max-w-[200px] object-contain ml-0 md:ml-4"
                   />
                 </div>
 
-                <button 
+                <button
                   onClick={() => toggleExpand(index)}
-                  className="bg-primary text-white border-none px-5 py-2 rounded cursor-pointer font-semibold transition-all duration-300 mt-4 hover:bg-secondary"
+                  className="bg-primary text-white border-none px-4 md:px-5 py-2 text-sm md:text-base rounded cursor-pointer font-semibold transition-all duration-300 mt-4 hover:bg-secondary"
                 >
                   {expandedItems.includes(index) ? 'Read Less' : 'Read More'}
                 </button>
 
                 {/* Expandable details */}
-                <div 
-                  className={`overflow-hidden transition-all duration-500 ${
-                    expandedItems.includes(index) ? 'max-h-[1000px] mt-4' : 'max-h-0'
-                  }`}
+                <div
+                  className={`overflow-hidden transition-all duration-500 ${expandedItems.includes(index) ? 'max-h-[1000px] mt-4' : 'max-h-0'
+                    }`}
                 >
                   <ul className="list-none pl-0">
                     {exp.details.map((detail, idx) => (
-                      <li 
+                      <li
                         key={idx}
                         className="py-2 pl-6 relative text-text-light before:content-['✓'] before:absolute before:left-0 before:text-accent before:font-bold"
                       >

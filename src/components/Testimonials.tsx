@@ -25,12 +25,12 @@ const Testimonials = () => {
   return (
     <section className="px-5 pb-20 bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-center text-[2.5rem] font-bold text-primary mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
+        <h2 className="text-center text-2xl md:text-[2.5rem] font-bold text-primary mb-8 md:mb-12 relative pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-[100px] after:h-1 after:bg-accent after:rounded">
           What Colleagues Say
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
           {testimonials.map((testimonial, index) => (
-            <div 
+            <div
               key={index}
               className="bg-bg-light p-10 rounded-2xl shadow-md transition-all duration-300 relative border-t-4 border-primary hover:-translate-y-2.5 hover:shadow-xl hover:bg-white"
             >
