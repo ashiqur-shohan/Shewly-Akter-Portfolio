@@ -90,7 +90,7 @@ const Contact = () => {
 
               {/* References */}
               <div className="mt-6 md:mt-8 p-6 md:p-8 bg-bg-light rounded-lg">
-                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base md:text-lg">Professional References</h3>
+                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base text-xl md:text-2xl">Professional References</h3>
 
                 <div className="mb-6 pb-6 border-b border-gray-300">
                   <h4 className="text-secondary font-bold mb-1">Madhab Chandra Das</h4>
