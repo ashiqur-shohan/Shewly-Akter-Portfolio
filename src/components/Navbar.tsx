@@ -22,7 +22,11 @@ const Navbar = () => {
     }`}>
       <div className="max-w-[1200px] mx-auto px-5 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-primary hover:text-secondary transition-colors">
-          <img src="/shewly_logo.png" className='w-[50px] ' alt="" />
+          <img
+              src="/shewly_logo.png"
+              alt="Profile Picture"
+              className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] object-cover"
+          />
         </Link>
 
         <ul className={`${

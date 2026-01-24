@@ -2,7 +2,7 @@ import Hero from '../components/Hero';
 import Stats from '../components/Stats';
 import Highlights from '../components/Highlights';
 import LogoSlider from '../components/LogoSlider';
-import Testimonials from '../components/Testimonials';
+// import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Stats />
       <Highlights />
       <LogoSlider />
-      <Testimonials />
+      {/*<Testimonials />*/}
     </>
   );
 };

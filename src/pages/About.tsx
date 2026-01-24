@@ -32,7 +32,7 @@ const About = () => {
               </p>
               <p className="text-text-light leading-relaxed text-lg">
                 Throughout my career, I have collaborated with prestigious organizations including Virginia Tech,
-                USDA Forest Service, Plan International, and the World Bank, contributing to projects that empower
+                USDA Forest Service,International Development Enterprises,Bangladesh Institute of Labor Studies, Helen Keller International,International Center for Research on Women,icddr bangladesh and Plan International, contributing to projects that empower
                 vulnerable communities and promote inclusive development practices.
               </p>
             </div>
@@ -65,7 +65,7 @@ const About = () => {
                   <p className="text-text-light mb-2">Department of Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.10 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[200px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
               </div>
             </div>
 
@@ -80,7 +80,7 @@ const About = () => {
                   <p className="text-text-light mb-2">Department of Anthropology</p>
                   <p className="text-accent font-semibold">CGPA: 3.36 out of 4.0</p>
                 </div>
-                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[120px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
+                <img src="/ju.png" alt="Jahangirnagar University" className="w-full max-w-[200px] md:max-w-[150px] lg:max-w-[200px] h-auto object-contain mx-auto md:ml-3 md:mr-0" />
               </div>
             </div>
           </div>

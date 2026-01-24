@@ -49,27 +49,44 @@ const Contact = () => {
             <div>
               <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">Contact Information</h2>
 
-              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+              <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📧</div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Email</h3>
+                  <h3 className="text-secondary font-bold text-base md:text-lg">Email</h3>
                   <a href="mailto:shewlyakter@gmail.com" className="text-primary hover:text-secondary transition-colors">
                     shewlyakter@gmail.com
                   </a>
                 </div>
               </div>
 
-              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+              <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📱</div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Phone</h3>
+                  <h3 className="text-secondary font-bold text-base md:text-lg">Phone</h3>
                   <a href="tel:+880-16-16750597" className="text-primary hover:text-secondary transition-colors">
                     +880-16-16750597
                   </a>
                 </div>
               </div>
 
-              <div className="flex gap-4 md:gap-6 mb-4 p-4 md:p-6 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+              <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
+                <div className="min-w-[40px] md:min-w-[50px]">
+                  <img
+                      src="/linkedin.svg"
+                      alt="LinkedIn"
+                      className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] object-cover"
+                  />
+
+                </div>
+                <div>
+                  <h3 className="text-secondary font-bold text-base md:text-lg">LinkedIn</h3>
+                  <a href="https://www.linkedin.com/in/shewlyakter/" target="_blank" className="text-primary hover:text-secondary transition-colors">
+                    Shewly Akter
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📍</div>
                 <div>
                   <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Location</h3>
@@ -79,10 +96,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="text-primary hover:text-secondary transition-colors cursor-pointer inline-block"
                   >
-                    <p className="leading-relaxed">
-                      House 13/13, Road 2,<br />
-                      Shyamoli, Dhaka-1207<br />
-                      Bangladesh
+                    <p className="leading-relaxed">House 13/13, Road 2, Shyamoli, Dhaka-1207, Bangladesh
                     </p>
                   </a>
                 </div>

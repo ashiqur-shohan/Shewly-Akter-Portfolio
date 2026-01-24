@@ -148,8 +148,8 @@ const Experience = () => {
         subtitle="A journey through impactful international development projects"
       />
 
-      <section className=" md:py-16 px-5 bg-bg-light">
-        <div className="max-w-[900px] mx-auto relative mt-12">
+      <section className="py-12 md:py-16 px-5 bg-bg-light">
+        <div className="max-w-[900px] mx-auto relative">
           {/* Timeline line */}
           <div className="absolute left-2 md:left-5 top-0 bottom-0 w-[2px] md:w-[3px] bg-primary"></div>
 
@@ -159,7 +159,7 @@ const Experience = () => {
               <div className="absolute left-0 md:left-3 top-0 w-4 h-4 md:w-5 md:h-5 bg-accent border-2 md:border-4 border-white rounded-full shadow-md z-10"></div>
 
               {/* Content card */}
-              <div className="bg-white p-4 md:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1 text-center md:text-left">
+              <div className="bg-white p-4 md:p-8 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:translate-x-1 md:text-left">
                 <div className="inline-block bg-primary text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm mb-4 mx-auto md:mx-0">
                   {exp.date}
                 </div>
@@ -170,7 +170,7 @@ const Experience = () => {
                     <p className="text-text-dark font-semibold mb-1 text-sm md:text-base">{exp.company}</p>
                     <p className="text-text-light italic mb-4 text-sm md:text-base">{exp.project}</p>
                   </div>
-                  <div className="w-full flex justify-center md:justify-end md:w-auto">
+                  <div className="w-full flex my-2 md:justify-end md:w-auto">
                     <img
                       src={exp.logo}
                       alt={exp.company}
@@ -181,7 +181,7 @@ const Experience = () => {
 
                 <button
                   onClick={() => toggleExpand(index)}
-                  className="bg-primary text-white border-none px-4 md:px-5 py-2 text-sm md:text-base rounded cursor-pointer font-semibold transition-all duration-300 mt-4 hover:bg-secondary mx-auto md:mx-0 block md:inline-block"
+                  className="bg-primary text-white border-none px-4 md:px-5 py-2 text-sm md:text-base rounded cursor-pointer font-semibold transition-all duration-300 hover:bg-secondary md:mx-0 block md:inline-block"
                 >
                   {expandedItems.includes(index) ? 'Read Less' : 'Read More'}
                 </button>
