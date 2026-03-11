@@ -1,5 +1,5 @@
-import { useRef, useEffect, useCallback } from 'react';
-import { motion, useMotionValue, animate } from 'framer-motion';
+import { useRef, useEffect, useCallback } from "react";
+import { motion, useMotionValue, animate } from "framer-motion";
 
 const LogoSlider = () => {
   const x = useMotionValue(0);
@@ -8,14 +8,15 @@ const LogoSlider = () => {
   const resumeTimeoutRef = useRef<any>(null);
 
   const logos = [
-    { src: '/vt.svg', alt: 'Virginia Tech' },
-    { src: '/usfs.png', alt: 'USDA Forest Service' },
-    { src: '/ide.jpeg', alt: 'International Development Enterprises' },
-    { src: '/plan.png', alt: 'Plan International' },
-    { src: '/bils.png', alt: 'Bangladesh Institute of Labor Studies' },
-    { src: '/hki.png', alt: 'Helen Keller International' },
-    { src: '/icrw.png', alt: 'International Center for Research on Women' },
-    { src: '/icddrb.png', alt: 'icddr,b' },
+    { src: "/vt.svg", alt: "Virginia Tech" },
+    { src: "/usfs.png", alt: "USDA Forest Service" },
+    { src: "/ide.jpeg", alt: "International Development Enterprises" },
+    { src: "/plan.png", alt: "Plan International" },
+    { src: "/bils.png", alt: "Bangladesh Institute of Labor Studies" },
+    { src: "/hki.png", alt: "Helen Keller International" },
+    { src: "/icrw.png", alt: "International Center for Research on Women" },
+    { src: "/icddrb.png", alt: "icddr,b" },
+    { src: "/actionaid-logo.png", alt: "ActionAid" },
   ];
 
   // 5 sets of logos for absolute bulletproof infinite navigation
@@ -43,7 +44,7 @@ const LogoSlider = () => {
       x.set(currentX + contentWidth);
     }
     // If we drift too far right (towards 1st/2nd set)
-    else if (currentX >= -2 * contentWidth + (contentWidth * 0.5)) {
+    else if (currentX >= -2 * contentWidth + contentWidth * 0.5) {
       x.set(currentX - contentWidth);
     }
   }, [x, getDimensions]);
@@ -72,7 +73,7 @@ const LogoSlider = () => {
       onComplete: () => {
         x.set(-2 * contentWidth);
         startAnimation();
-      }
+      },
     });
   }, [x, getDimensions]);
 
@@ -103,7 +104,7 @@ const LogoSlider = () => {
     startAnimation();
   };
 
-  const handleManualNav = (direction: 'next' | 'prev') => {
+  const handleManualNav = (direction: "next" | "prev") => {
     // 1. Stop everything immediately
     if (animationRef.current) animationRef.current.stop();
     if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
@@ -114,7 +115,7 @@ const LogoSlider = () => {
 
     const currentX = x.get();
     const step = 268; // approx width of one item + gap
-    const targetX = direction === 'next' ? currentX - step : currentX + step;
+    const targetX = direction === "next" ? currentX - step : currentX + step;
 
     // 3. Smooth nudge
     animate(x, targetX, {
@@ -128,7 +129,7 @@ const LogoSlider = () => {
         resumeTimeoutRef.current = setTimeout(() => {
           startAnimation();
         }, 2000);
-      }
+      },
     });
   };
 
@@ -171,14 +172,14 @@ const LogoSlider = () => {
         {/* Navigation Buttons */}
         <div className="flex justify-center gap-8 mt-8">
           <button
-            onClick={() => handleManualNav('prev')}
+            onClick={() => handleManualNav("prev")}
             className="bg-primary text-white border-none w-[45px] h-[45px] rounded-full text-xl cursor-pointer transition-all duration-300 flex items-center justify-center hover:bg-secondary hover:scale-110 hover:shadow-xl active:scale-95 shadow-md"
             aria-label="Previous"
           >
             ❮
           </button>
           <button
-            onClick={() => handleManualNav('next')}
+            onClick={() => handleManualNav("next")}
             className="bg-primary text-white border-none w-[45px] h-[45px] rounded-full text-xl cursor-pointer transition-all duration-300 flex items-center justify-center hover:bg-secondary hover:scale-110 hover:shadow-xl active:scale-95 shadow-md"
             aria-label="Next"
           >
