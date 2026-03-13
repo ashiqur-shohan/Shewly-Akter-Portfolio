@@ -47,23 +47,39 @@ const Contact = () => {
           <div className="grid md:grid-cols-[1fr_1.5fr] gap-8 md:gap-16 mt-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">Contact Information</h2>
+              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">
+                Contact Information
+              </h2>
 
               <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📧</div>
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">
+                  📧
+                </div>
                 <div>
-                  <h3 className="text-secondary font-bold text-base md:text-lg">Email</h3>
-                  <a href="mailto:shewlyakter@gmail.com" className="text-primary hover:text-secondary transition-colors">
+                  <h3 className="text-secondary font-bold text-base md:text-lg">
+                    Email
+                  </h3>
+                  <a
+                    href="mailto:shewlyakter@gmail.com"
+                    className="text-primary hover:text-secondary transition-colors"
+                  >
                     shewlyakter@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📱</div>
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">
+                  📱
+                </div>
                 <div>
-                  <h3 className="text-secondary font-bold text-base md:text-lg">Phone</h3>
-                  <a href="tel:+880-16-16750597" className="text-primary hover:text-secondary transition-colors">
+                  <h3 className="text-secondary font-bold text-base md:text-lg">
+                    Phone
+                  </h3>
+                  <a
+                    href="tel:+880-16-16750597"
+                    className="text-primary hover:text-secondary transition-colors"
+                  >
                     +880-16-16750597
                   </a>
                 </div>
@@ -72,61 +88,90 @@ const Contact = () => {
               <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
                 <div className="min-w-[40px] md:min-w-[50px]">
                   <img
-                      src="/linkedin.svg"
-                      alt="LinkedIn"
-                      className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] object-cover"
+                    src="/linkedin.svg"
+                    alt="LinkedIn"
+                    className="w-[24px] h-[24px] md:w-[32px] md:h-[32px] object-cover"
                   />
-
                 </div>
                 <div>
-                  <h3 className="text-secondary font-bold text-base md:text-lg">LinkedIn</h3>
-                  <a href="https://www.linkedin.com/in/shewlyakter/" target="_blank" className="text-primary hover:text-secondary transition-colors">
+                  <h3 className="text-secondary font-bold text-base md:text-lg">
+                    LinkedIn
+                  </h3>
+                  <a
+                    href="https://www.linkedin.com/in/shewlyakter/"
+                    target="_blank"
+                    className="text-primary hover:text-secondary transition-colors"
+                  >
                     Shewly Akter
                   </a>
                 </div>
               </div>
 
               <div className="flex gap-2 mb-4 p-4 bg-bg-light rounded-lg transition-all duration-300 hover:shadow-md hover:translate-x-1">
-                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">📍</div>
+                <div className="text-2xl md:text-3xl min-w-[40px] md:min-w-[50px]">
+                  📍
+                </div>
                 <div>
-                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">Location</h3>
+                  <h3 className="text-secondary font-bold mb-2 text-base md:text-lg">
+                    Location
+                  </h3>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=House+13%2F13%2C+Road+2%2C+Shyamoli%2C+Dhaka-1207%2C+Bangladesh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:text-secondary transition-colors cursor-pointer inline-block"
                   >
-                    <p className="leading-relaxed">House 13/13, Road 2, Shyamoli, Dhaka-1207, Bangladesh
-                    </p>
+                    <p className="leading-relaxed">Dhaka, Bangladesh</p>
                   </a>
                 </div>
               </div>
 
               {/* References */}
               <div className="mt-6 md:mt-8 p-6 md:p-8 bg-bg-light rounded-lg">
-                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base text-xl md:text-2xl">Professional References</h3>
+                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base text-xl md:text-2xl">
+                  Professional References
+                </h3>
 
                 <div className="mb-6 pb-6 border-b border-gray-300">
-                  <h4 className="text-secondary font-bold mb-1">Madhab Chandra Das</h4>
-                  <p className="text-text-light text-sm mb-1">Virginia Tech / Country Program Manager</p>
-                  <a href="mailto:madhabcd@vt.edu" className="text-primary text-sm hover:underline">
+                  <h4 className="text-secondary font-bold mb-1">Morium Nesa</h4>
+                  <p className="text-text-light text-sm mb-1">
+                    Lead – Women Rights & Gender Equity | ActionAid Bangladesh
+                  </p>
+                  <a
+                    href="mailto:mhaider6@worldbank.org"
+                    className="text-primary text-sm hover:underline"
+                  >
+                    Morium.Nesa@actionaid.org
+                  </a>
+                </div>
+
+                <div className="mb-6 pb-6 border-b border-gray-300">
+                  <h4 className="text-secondary font-bold mb-1">
+                    Madhab Chandra Das
+                  </h4>
+                  <p className="text-text-light text-sm mb-1">
+                    Virginia Tech | Country Program Manager
+                  </p>
+                  <a
+                    href="mailto:madhabcd@vt.edu"
+                    className="text-primary text-sm hover:underline"
+                  >
                     madhabcd@vt.edu
                   </a>
                 </div>
 
                 <div className="mb-6 pb-6 border-b border-gray-300">
-                  <h4 className="text-secondary font-bold mb-1">Saqif Nayeem Khan</h4>
-                  <p className="text-text-light text-sm mb-1">MarketShare Associates / Advisor, Inclusive Markets</p>
-                  <a href="mailto:skhan@marketshareassociates.com" className="text-primary text-sm hover:underline">
+                  <h4 className="text-secondary font-bold mb-1">
+                    Saqif Nayeem Khan
+                  </h4>
+                  <p className="text-text-light text-sm mb-1">
+                    MarketShare Associates | Advisor, Inclusive Markets
+                  </p>
+                  <a
+                    href="mailto:skhan@marketshareassociates.com"
+                    className="text-primary text-sm hover:underline"
+                  >
                     skhan@marketshareassociates.com
-                  </a>
-                </div>
-
-                <div>
-                  <h4 className="text-secondary font-bold mb-1">M Murshed Haider</h4>
-                  <p className="text-text-light text-sm mb-1">World Bank / Infrastructure Finance and PPP Consultant</p>
-                  <a href="mailto:mhaider6@worldbank.org" className="text-primary text-sm hover:underline">
-                    mhaider6@worldbank.org
                   </a>
                 </div>
               </div>
@@ -134,10 +179,18 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="bg-bg-light p-6 md:p-8 rounded-lg">
+              <h2 className="text-primary font-bold text-xl md:text-2xl mb-6 md:mb-8">
+                Send a Message
+              </h2>
+              <form
+                onSubmit={handleSubmit}
+                className="bg-bg-light p-6 md:p-8 rounded-lg"
+              >
                 <div className="mb-6">
-                  <label htmlFor="name" className="block text-text-dark font-semibold mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-text-dark font-semibold mb-2"
+                  >
                     Your Name
                   </label>
                   <input
@@ -152,7 +205,10 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="email" className="block text-text-dark font-semibold mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-text-dark font-semibold mb-2"
+                  >
                     Your Email
                   </label>
                   <input
@@ -167,7 +223,10 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="subject" className="block text-text-dark font-semibold mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-text-dark font-semibold mb-2"
+                  >
                     Subject
                   </label>
                   <input
@@ -182,7 +241,10 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-6">
-                  <label htmlFor="message" className="block text-text-dark font-semibold mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-text-dark font-semibold mb-2"
+                  >
                     Message
                   </label>
                   <textarea
@@ -205,10 +267,13 @@ const Contact = () => {
               </form>
 
               {formMessage.text && (
-                <div className={`mt-4 p-4 rounded ${formMessage.type === 'success'
-                  ? 'bg-green-100 text-green-800 border border-green-200'
-                  : 'bg-red-100 text-red-800 border border-red-200'
-                  }`}>
+                <div
+                  className={`mt-4 p-4 rounded ${
+                    formMessage.type === "success"
+                      ? "bg-green-100 text-green-800 border border-green-200"
+                      : "bg-red-100 text-red-800 border border-red-200"
+                  }`}
+                >
                   {formMessage.text}
                 </div>
               )}

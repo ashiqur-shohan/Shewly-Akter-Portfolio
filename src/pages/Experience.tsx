@@ -18,7 +18,7 @@ const Experience = () => {
       title: "Gender Expert",
       company: "ActionAid Bangladesh",
       project:
-        "Strengthening Women's Political Participation & Leadership (UN Women)",
+        "Strengthening institutional capacity for democratic reforms through gender-responsive and inclusive participation (GRIP) in decision-making",
       logo: "/actionaid-logo.png",
       details: [
         "Leading technical and strategic input on gender equality, women's leadership, and gender-responsive governance across project districts",

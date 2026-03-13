@@ -26,33 +26,30 @@ const About = () => {
                 Professional Background
               </h2>
               <p className="text-text-light mb-6 leading-relaxed text-lg">
-                I am a dedicated Gender Equality & Social Inclusion Specialist
-                with over 13 years of experience in international development,
-                research, and knowledge management. My work focuses on
+                I am a dedicated development professional with over 14 years of
+                experience in international development, research, and knowledge
+                management. I am currently serving as a Gender Expert at
+                ActionAid Bangladesh, leading initiatives on women's political
+                leadership, gender-responsive governance, and advocacy to
+                address violence against women in politics. My work focuses on
                 integrating gender analysis, implementing MEL systems, and
                 creating sustainable social impact through evidence-based
                 interventions.
               </p>
               <p className="text-text-light leading-relaxed text-lg">
                 Throughout my career, I have collaborated with prestigious
-                organizations including Virginia Tech, USDA Forest
-                Service,International Development Enterprises,Bangladesh
-                Institute of Labor Studies, Helen Keller
-                International,International Center for Research on Women,icddr
-                bangladesh and Plan International, contributing to projects that
-                empower vulnerable communities and promote inclusive development
-                practices.
+                organizations, including Virginia Tech, USDA Forest Service,
+                International Development Enterprises, Bangladesh Institute of
+                Labor Studies, Helen Keller International, International Center
+                for Research on Women, icddr,b, and Plan International,
+                contributing to projects that empower vulnerable communities and
+                promote inclusive development practices.
               </p>
-              <p className="text-text-light leading-relaxed text-lg mt-4">
-                I am currently serving as a Gender Expert at ActionAid
-                Bangladesh, leading initiatives on women&apos;s political
-                leadership, gender-responsive governance, and advocacy to
-                address violence against women in politics.
-              </p>
+              
             </div>
             <div className="flex justify-center items-center">
               <img
-                src="/about_profile.jpg"
+                src="/about-img.jpeg"
                 alt="Profile Picture"
                 className="w-full max-w-[300px] md:max-w-[350px] h-auto rounded-lg shadow-xl object-cover mx-auto"
               />

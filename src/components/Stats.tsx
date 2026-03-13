@@ -27,9 +27,9 @@ const CountUp = ({ to, duration = 2 }: CountUpProps) => {
 
 const Stats = () => {
   const stats = [
-    { label: 'Years of Experience', value: 13 },
-    { label: 'Major Projects', value: 8 },
-    { label: 'International Organizations', value: 6 },
+    { label: 'Years of Experience', value: 14 },
+    { label: 'Major Projects', value: 9 },
+    { label: 'International Organizations', value: 7 },
   ];
 
   return (

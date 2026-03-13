@@ -7,7 +7,8 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{
-          backgroundImage: 'linear-gradient(rgba(248, 249, 250, 0.85), rgba(233, 236, 239, 0.85)), url(/background_image.jpg)'
+          backgroundImage:
+            "linear-gradient(rgba(248, 249, 250, 0.85), rgba(233, 236, 239, 0.85)), url(/background_image.jpg)",
         }}
       ></div>
 
@@ -17,11 +18,12 @@ const Hero = () => {
             Shewly Akter
           </h1>
           <h2 className="text-lg md:text-xl lg:text-2xl text-secondary mb-4 md:mb-6 font-medium animate-fade-in-delay">
-            Gender Equality & Social Inclusion Specialist
+            Gender Expert
           </h2>
           <p className="text-base md:text-lg text-text-light mb-6 md:mb-8 leading-relaxed animate-fade-in-delay-2">
-            Empowering communities through research, gender mainstreaming, and knowledge management.
-            Passionate about creating sustainable social impact in international development.
+            Empowering communities through research, gender mainstreaming, and
+            knowledge management. Passionate about creating sustainable social
+            impact in international development.
           </p>
           <div className="flex gap-3 md:gap-4 flex-wrap justify-center md:justify-start animate-fade-in-delay-3">
             <Link
