@@ -40,8 +40,16 @@ A modern, responsive portfolio website built with **React 19**, **TypeScript**, 
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
+   ```
+
+4. Configure EmailJS for the contact form by creating/updating `.env`:
+   ```bash
+   VITE_EMAILJS_SERVICE_KEY=your_service_id
+   VITE_EMAILJS_TEMPLATE_KEY=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
    ```
 
 ### Development

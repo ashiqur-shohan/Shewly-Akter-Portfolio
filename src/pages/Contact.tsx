@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import PageHeader from '../components/PageHeader';
 
 const Contact = () => {
@@ -9,23 +10,59 @@ const Contact = () => {
     message: ''
   });
   const [formMessage, setFormMessage] = useState({ type: '', text: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_KEY;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_KEY;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Simulate form submission
-    setTimeout(() => {
+    if (!serviceId || !templateId || !publicKey) {
+      setFormMessage({
+        type: 'error',
+        text: 'Email service is not configured. Please try again later.'
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    setFormMessage({ type: '', text: '' });
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          from_name: formData.name,
+          email: formData.email,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          reply_to: formData.email
+        },
+        publicKey
+      );
+
       setFormMessage({
         type: 'success',
         text: 'Thank you for your message! I will get back to you soon.'
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch {
+      setFormMessage({
+        type: 'error',
+        text: 'Failed to send your message. Please try again in a moment.'
+      });
+    } finally {
+      setIsSubmitting(false);
 
-      // Hide message after 5 seconds
       setTimeout(() => {
         setFormMessage({ type: '', text: '' });
       }, 5000);
-    }, 500);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -128,7 +165,7 @@ const Contact = () => {
 
               {/* References */}
               <div className="mt-6 md:mt-8 p-6 md:p-8 bg-bg-light rounded-lg">
-                <h3 className="text-primary font-bold mb-4 md:mb-6 text-base text-xl md:text-2xl">
+                <h3 className="text-primary font-bold mb-4 md:mb-6 text-xl md:text-2xl">
                   Professional References
                 </h3>
 
@@ -260,9 +297,10 @@ const Contact = () => {
 
                 <button
                   type="submit"
+                  disabled={isSubmitting}
                   className="px-8 py-3 rounded bg-primary text-white font-semibold hover:bg-secondary hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
 
